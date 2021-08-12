@@ -1,5 +1,5 @@
 # Visual Odometry for Omnidirectional Camera 
-The project contains the R-TAB map based Visual odometry for [PAL Camera](https://dreamvu.com/pal-usb/) by DreamVU. 
+The project contains the [R-TAB map](https://introlab.3it.usherbrooke.ca/mediawiki-introlab/images/7/7a/Labbe18JFR_preprint.pdf) based Visual odometry for [PAL Camera](https://dreamvu.com/pal-usb/) by DreamVU. 
 
 ## Structure 
 The Repository Contains 3 Folders:
