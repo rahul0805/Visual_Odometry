@@ -80,7 +80,7 @@ def plot_img(good1,img2,kp_2d2, sc):
         img3 = cv2.circle(img2,(x,y),2,(0,255,255),-1)
         if((sc[ii]==[1])):
             img3 = cv2.circle(img2,(x,y),2,(0,0, 255),-1)
-    filename = './match/'+str(fname)+'.jpg'
+    filename = './results/f2f/match/'+str(fname)+'.jpg'
     cv2.imwrite(filename, img3)  
 
 def estimate_pure_translation(img1, mask1, img2, mask2, theta, count):
@@ -207,12 +207,12 @@ while (fname<357):
 		print("img_num : {}, nfeatures : {}, tx : {}, ty : {}, theta : {} ".format(fname,  num_features, tx*100, ty*100, int(theta/np.pi*180)))
 		img1 = img2.copy()
 		mask1 = mask2.copy()
-		np.save('x_co_f2f', txs)
-		np.save('y_co_f2f', tys)
-		np.save('theta_co_f2f', thetas)
+		np.save('/results/f2f/x_co_f2f', txs)
+		np.save('/results/f2f/y_co_f2f', tys)
+		np.save('/results/f2f/theta_co_f2f', thetas)
 		plt.axis("equal")
 		plt.scatter(txs, tys)
-		plt.savefig("./f2f.png")
+		plt.savefig("./results/f2f/f2f.png")
 		plt.close("all")
 	fname +=1
 		

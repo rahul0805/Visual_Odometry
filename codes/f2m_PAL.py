@@ -884,6 +884,8 @@ while(i<total_images_count):
 
         # For Updating the Previous Transformations ; 
         if((i%refresh_rate==0) and (i!=first_point) and (i!=440)):
+            file_name = './results/f2m/pcd/map_0_'+str(i)+'_10.ply'
+            write_ply(file_name,final_pts,final_col)
             init = 0
             H_prev = H_fin[0:3,0:3]@H_prev
             x_prev = tx+x_prev
