@@ -56,3 +56,13 @@ results
    7. Depth reliability
    ```
 2. The Ground truth dataset used in this case is ``` rgbd_dataset_freiburg2_pioneer_slam ``` from [TUM_Dataset](https://vision.in.tum.de/data/datasets/rgbd-dataset). All the necessary tools for evaluation are given in their website. The code for syncing the images after downloading the dataset is in  the folder ```./misc/sync_TUM_dataset/``` .
+
+## Results
+
+### Indoor Dataset
+![Map for Indoor dataset by PAL](./results/indoor.png "Map")
+![Trajectory for Indoor dataset by PAL](./results/indoor_traj.png)
+
+### Outdoor Dataset 
+![Map for outdoor dataset by PAL](./results/outdoor.png)
+![Trajectory for outdoor dataset by PAL](./results/outdoor_traj.png)
